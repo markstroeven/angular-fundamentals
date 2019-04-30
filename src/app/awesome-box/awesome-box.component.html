@@ -1,0 +1,10 @@
+<div #container class="awesome-box">
+  <h3 class="awesome-box__title">
+    {{title}}
+  </h3>
+  <div class="awesome-box__content">
+    {{contentItem | json}}
+  </div>
+  <button class="awesome-box__action" (click)="setColor()">Get random color</button>
+  <button class="awesome-box__action" (click)="selectColor()" *ngIf="currentColor">Set this color!</button>
+</div>

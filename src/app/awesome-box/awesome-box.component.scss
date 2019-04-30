@@ -1,0 +1,17 @@
+.awesome-box {
+  border: solid black 1px;
+  display: inline-block;
+  padding: 12px 12px 12px 12px;
+
+  &__title {
+    font-size: 24px;
+  }
+
+  &__content {
+    margin: 0 auto 0 auto
+  }
+
+  &__action {
+    margin: 6px 6px 6px 6px;
+  }
+}

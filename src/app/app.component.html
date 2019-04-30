@@ -1,0 +1,10 @@
+<pre>{{env | json}}</pre>
+<div #container class="container">
+  <app-awesome-bar title="title bar"></app-awesome-bar>
+
+  <app-awesome-box *ngFor="let title of titles"
+                   (onColorChange)="setBackgroundColor($event)"
+                   [title]="title"
+                   [contentItem]="item">
+  </app-awesome-box>
+</div>
